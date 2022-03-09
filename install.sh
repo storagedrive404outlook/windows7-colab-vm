@@ -14,6 +14,9 @@ mv 'IE11 - Win7.ova' win7.ova
 rm win7.zip
 tar -xvf win7.ova
 mv 'IE11 - Win7-disk001.vmdk' win7disk1.vmdk
+rm win7.ova
+mv 'IE11 - Win7.ovf' win7.ovf
+rm win7.ovf
 echo "Windows 7 x64 Lite On Google Colab"
 echo Your VNC IP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
